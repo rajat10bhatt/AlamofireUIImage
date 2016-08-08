@@ -1,0 +1,21 @@
+PODS:
+  - Alamofire (3.4.1)
+  - AlamofireImage (2.4.1):
+    - Alamofire (~> 3.3)
+  - SCLAlertView (0.5.9)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - AlamofireImage (~> 2.0)
+  - SCLAlertView
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  AlamofireImage: 3ccf3347d9ea24580dc11fb892770a0be6a29826
+  SCLAlertView: d7c6a48c7d340e60206d4ed0e8ebcbff3b9d2a44
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+PODFILE CHECKSUM: 75b89ef5719d3d019bbebe235a55731fb513bdc3
+
+COCOAPODS: 1.0.1
