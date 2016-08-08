@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		044718F31D586DC5007A3CD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044718F21D586DC5007A3CD9 /* AppDelegate.swift */; };
+		044718F51D586DC5007A3CD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044718F41D586DC5007A3CD9 /* ViewController.swift */; };
+		044718F81D586DC5007A3CD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044718F61D586DC5007A3CD9 /* Main.storyboard */; };
+		044718FA1D586DC5007A3CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044718F91D586DC5007A3CD9 /* Assets.xcassets */; };
+		044718FD1D586DC5007A3CD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044718FB1D586DC5007A3CD9 /* LaunchScreen.storyboard */; };
+		044719081D586DC5007A3CD9 /* AlamofireImageTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044719071D586DC5007A3CD9 /* AlamofireImageTableViewTests.swift */; };
+		044719131D586DC5007A3CD9 /* AlamofireImageTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044719121D586DC5007A3CD9 /* AlamofireImageTableViewUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		044719041D586DC5007A3CD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 044718E71D586DC5007A3CD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 044718EE1D586DC5007A3CD9;
+			remoteInfo = AlamofireImageTableView;
+		};
+		0447190F1D586DC5007A3CD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 044718E71D586DC5007A3CD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 044718EE1D586DC5007A3CD9;
+			remoteInfo = AlamofireImageTableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		044718EF1D586DC5007A3CD9 /* AlamofireImageTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamofireImageTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		044718F21D586DC5007A3CD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		044718F41D586DC5007A3CD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		044718F71D586DC5007A3CD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		044718F91D586DC5007A3CD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		044718FC1D586DC5007A3CD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		044718FE1D586DC5007A3CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044719031D586DC5007A3CD9 /* AlamofireImageTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlamofireImageTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		044719071D586DC5007A3CD9 /* AlamofireImageTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireImageTableViewTests.swift; sourceTree = "<group>"; };
+		044719091D586DC5007A3CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0447190E1D586DC5007A3CD9 /* AlamofireImageTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlamofireImageTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		044719121D586DC5007A3CD9 /* AlamofireImageTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireImageTableViewUITests.swift; sourceTree = "<group>"; };
+		044719141D586DC5007A3CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		044718EC1D586DC5007A3CD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044719001D586DC5007A3CD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0447190B1D586DC5007A3CD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		044718E61D586DC5007A3CD9 = {
+			isa = PBXGroup;
+			children = (
+				044718F11D586DC5007A3CD9 /* AlamofireImageTableView */,
+				044719061D586DC5007A3CD9 /* AlamofireImageTableViewTests */,
+				044719111D586DC5007A3CD9 /* AlamofireImageTableViewUITests */,
+				044718F01D586DC5007A3CD9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		044718F01D586DC5007A3CD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				044718EF1D586DC5007A3CD9 /* AlamofireImageTableView.app */,
+				044719031D586DC5007A3CD9 /* AlamofireImageTableViewTests.xctest */,
+				0447190E1D586DC5007A3CD9 /* AlamofireImageTableViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		044718F11D586DC5007A3CD9 /* AlamofireImageTableView */ = {
+			isa = PBXGroup;
+			children = (
+				044718F21D586DC5007A3CD9 /* AppDelegate.swift */,
+				044718F41D586DC5007A3CD9 /* ViewController.swift */,
+				044718F61D586DC5007A3CD9 /* Main.storyboard */,
+				044718F91D586DC5007A3CD9 /* Assets.xcassets */,
+				044718FB1D586DC5007A3CD9 /* LaunchScreen.storyboard */,
+				044718FE1D586DC5007A3CD9 /* Info.plist */,
+			);
+			path = AlamofireImageTableView;
+			sourceTree = "<group>";
+		};
+		044719061D586DC5007A3CD9 /* AlamofireImageTableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				044719071D586DC5007A3CD9 /* AlamofireImageTableViewTests.swift */,
+				044719091D586DC5007A3CD9 /* Info.plist */,
+			);
+			path = AlamofireImageTableViewTests;
+			sourceTree = "<group>";
+		};
+		044719111D586DC5007A3CD9 /* AlamofireImageTableViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				044719121D586DC5007A3CD9 /* AlamofireImageTableViewUITests.swift */,
+				044719141D586DC5007A3CD9 /* Info.plist */,
+			);
+			path = AlamofireImageTableViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		044718EE1D586DC5007A3CD9 /* AlamofireImageTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 044719171D586DC5007A3CD9 /* Build configuration list for PBXNativeTarget "AlamofireImageTableView" */;
+			buildPhases = (
+				044718EB1D586DC5007A3CD9 /* Sources */,
+				044718EC1D586DC5007A3CD9 /* Frameworks */,
+				044718ED1D586DC5007A3CD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlamofireImageTableView;
+			productName = AlamofireImageTableView;
+			productReference = 044718EF1D586DC5007A3CD9 /* AlamofireImageTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		044719021D586DC5007A3CD9 /* AlamofireImageTableViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0447191A1D586DC5007A3CD9 /* Build configuration list for PBXNativeTarget "AlamofireImageTableViewTests" */;
+			buildPhases = (
+				044718FF1D586DC5007A3CD9 /* Sources */,
+				044719001D586DC5007A3CD9 /* Frameworks */,
+				044719011D586DC5007A3CD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				044719051D586DC5007A3CD9 /* PBXTargetDependency */,
+			);
+			name = AlamofireImageTableViewTests;
+			productName = AlamofireImageTableViewTests;
+			productReference = 044719031D586DC5007A3CD9 /* AlamofireImageTableViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0447190D1D586DC5007A3CD9 /* AlamofireImageTableViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0447191D1D586DC5007A3CD9 /* Build configuration list for PBXNativeTarget "AlamofireImageTableViewUITests" */;
+			buildPhases = (
+				0447190A1D586DC5007A3CD9 /* Sources */,
+				0447190B1D586DC5007A3CD9 /* Frameworks */,
+				0447190C1D586DC5007A3CD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				044719101D586DC5007A3CD9 /* PBXTargetDependency */,
+			);
+			name = AlamofireImageTableViewUITests;
+			productName = AlamofireImageTableViewUITests;
+			productReference = 0447190E1D586DC5007A3CD9 /* AlamofireImageTableViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		044718E71D586DC5007A3CD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Rajat;
+				TargetAttributes = {
+					044718EE1D586DC5007A3CD9 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					044719021D586DC5007A3CD9 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 044718EE1D586DC5007A3CD9;
+					};
+					0447190D1D586DC5007A3CD9 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 044718EE1D586DC5007A3CD9;
+					};
+				};
+			};
+			buildConfigurationList = 044718EA1D586DC5007A3CD9 /* Build configuration list for PBXProject "AlamofireImageTableView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 044718E61D586DC5007A3CD9;
+			productRefGroup = 044718F01D586DC5007A3CD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				044718EE1D586DC5007A3CD9 /* AlamofireImageTableView */,
+				044719021D586DC5007A3CD9 /* AlamofireImageTableViewTests */,
+				0447190D1D586DC5007A3CD9 /* AlamofireImageTableViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		044718ED1D586DC5007A3CD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044718FD1D586DC5007A3CD9 /* LaunchScreen.storyboard in Resources */,
+				044718FA1D586DC5007A3CD9 /* Assets.xcassets in Resources */,
+				044718F81D586DC5007A3CD9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044719011D586DC5007A3CD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0447190C1D586DC5007A3CD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		044718EB1D586DC5007A3CD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044718F51D586DC5007A3CD9 /* ViewController.swift in Sources */,
+				044718F31D586DC5007A3CD9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044718FF1D586DC5007A3CD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044719081D586DC5007A3CD9 /* AlamofireImageTableViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0447190A1D586DC5007A3CD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044719131D586DC5007A3CD9 /* AlamofireImageTableViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		044719051D586DC5007A3CD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 044718EE1D586DC5007A3CD9 /* AlamofireImageTableView */;
+			targetProxy = 044719041D586DC5007A3CD9 /* PBXContainerItemProxy */;
+		};
+		044719101D586DC5007A3CD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 044718EE1D586DC5007A3CD9 /* AlamofireImageTableView */;
+			targetProxy = 0447190F1D586DC5007A3CD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		044718F61D586DC5007A3CD9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				044718F71D586DC5007A3CD9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		044718FB1D586DC5007A3CD9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				044718FC1D586DC5007A3CD9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		044719151D586DC5007A3CD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		044719161D586DC5007A3CD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		044719181D586DC5007A3CD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AlamofireImageTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Rajat.AlamofireImageTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		044719191D586DC5007A3CD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AlamofireImageTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Rajat.AlamofireImageTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0447191B1D586DC5007A3CD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AlamofireImageTableViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Rajat.AlamofireImageTableViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlamofireImageTableView.app/AlamofireImageTableView";
+			};
+			name = Debug;
+		};
+		0447191C1D586DC5007A3CD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AlamofireImageTableViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Rajat.AlamofireImageTableViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlamofireImageTableView.app/AlamofireImageTableView";
+			};
+			name = Release;
+		};
+		0447191E1D586DC5007A3CD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AlamofireImageTableViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Rajat.AlamofireImageTableViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AlamofireImageTableView;
+			};
+			name = Debug;
+		};
+		0447191F1D586DC5007A3CD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AlamofireImageTableViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Rajat.AlamofireImageTableViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AlamofireImageTableView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		044718EA1D586DC5007A3CD9 /* Build configuration list for PBXProject "AlamofireImageTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044719151D586DC5007A3CD9 /* Debug */,
+				044719161D586DC5007A3CD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		044719171D586DC5007A3CD9 /* Build configuration list for PBXNativeTarget "AlamofireImageTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044719181D586DC5007A3CD9 /* Debug */,
+				044719191D586DC5007A3CD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0447191A1D586DC5007A3CD9 /* Build configuration list for PBXNativeTarget "AlamofireImageTableViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0447191B1D586DC5007A3CD9 /* Debug */,
+				0447191C1D586DC5007A3CD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0447191D1D586DC5007A3CD9 /* Build configuration list for PBXNativeTarget "AlamofireImageTableViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0447191E1D586DC5007A3CD9 /* Debug */,
+				0447191F1D586DC5007A3CD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 044718E71D586DC5007A3CD9 /* Project object */;
+}
