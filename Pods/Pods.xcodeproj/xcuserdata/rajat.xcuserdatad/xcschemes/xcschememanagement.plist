@@ -14,6 +14,21 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AlamofireObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Kingfisher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-AlamofireImageTableView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,7 +52,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4354A8CDF6D5196D0EDE79F13080CC3E</key>
+		<key>1487028EFD3390109BB4659C994B3E38</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +62,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D05170051AD7F05C40EEDC996D9C1B77</key>
+		<key>8674AF9DC709E5413BB1CF4B7257A096</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FE62E2373E340B6F32B4F733E37A3027</key>
+		<key>8F3F3268D84E8FE27E7F976EC255EE88</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C5CBCAA97E951CC882334464FBDF983D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E96E13C4D3B5B5FC0651440734C2BF4D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FBD082A0D35F7917EAB9DD9D3CCA9976</key>
 		<dict>
 			<key>primary</key>
 			<true/>

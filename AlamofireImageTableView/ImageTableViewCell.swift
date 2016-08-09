@@ -14,7 +14,8 @@ class ImageTableViewCell: UITableViewCell {
     @IBOutlet weak var movieName: UILabel!
     @IBOutlet weak var bookButton: UIButton!
     @IBOutlet weak var languageOutlet: UILabel!
-    @IBOutlet weak var certificateLabel: UILabel!
+    @IBOutlet weak var certificateLabel: UILabel!   
+    @IBOutlet weak var dimensionOutlet: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -9,50 +9,91 @@
 import UIKit
 import Alamofire
 import AlamofireImage
+import SwiftyJSON
+import AlamofireObjectMapper
+import ObjectMapper
+import Kingfisher
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    // MARK: Properties
+    let url = "http://52.221.233.254/api/v1/citymovies/movies/"
+    let headers = ["city": "pune"]
+    var movies = [String]()
+    
     // MARK: Outlet
     @IBOutlet weak var tableViewOutlet: UITableView!
-    let names = ["Kung fu panda", "How to train your dragon"]
-    let urls = ["https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTcp6kQ8FZeiqX6c2iizxyfnk1vFzGBRJECaJijsKdkgS9nSh9unGXNLdL_LBMMEC2wFG5anD9H1vMJq4gau02avC9I9lDZp7E82J8wELE_EXSablKt7Xey_dabDw7vCePlyjvIybL3Eb0mgUxw0kfySGUZe6LgUWHCu5fuVJeLXKE-&format=jpg", "http://www.designbolts.com/wp-content/uploads/2014/05/how-to-train-your-dragon-2-hd-wallpaper-1920x10801.jpg"]
-    let language = ["English 3D", "English 3D"]
     
     // MARK: ViewController methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        getMovies()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    // MARK: Function to get movies
+    func getMovies (){
+        Alamofire.request(.GET, url, headers: headers).validate().responseJSON { response in
+            switch response.result {
+            case .Success(let json):
+                let key_json = JSON(json)
+                var count = 0
+                for _ in key_json
+                {
+                    let movie = key_json[count]
+                    let movieString = String(movie)
+                    self.movies.append(movieString)
+                    count = count+1
+                    //print(movie)
+                }
+                self.tableViewOutlet.reloadData()
+            case .Failure(let error):
+                print("Request failed with error: \(error)")
+                return
+            }
+            
+        }
+        
+    }
     
     // MARK: Delegate methods
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("Total count:\(names.count)")
-        return names.count
+        //print(self.movies.count)
+        // return self.movies.count
+        return self.movies.count
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        tableViewOutlet.scrollEnabled = true
         let cell = self.tableViewOutlet.dequeueReusableCellWithIdentifier("cell" , forIndexPath: indexPath) as! ImageTableViewCell
-     
-        Alamofire.request(.GET, urls[indexPath.row])
-            .responseImage { response in
-                debugPrint(response)
+        
+        if let deserializedMovie = Mapper<Movie>().map(movies[indexPath.row]){
+            // apend list to movies
+            // tableview  reload data
+            //print(deserializedMovie.title)
+            //cell.urlImage.image = image
+            
+            if let stringURL = deserializedMovie.poster{
+                let URL = NSURL(string: stringURL)!
+                print(URL)
+                let resource = Resource(downloadURL: URL)
+                cell.urlImage.kf_setImageWithResource(resource)
                 
-                //print(response.request)
-                //print(response.response)
-                //debugPrint(response.result)
-                
-                if let image = response.result.value {
-                    //print("image downloaded: \(image)")
-                   cell.urlImage.image = image
-                   cell.movieName.text = self.names[indexPath.row]
-                   cell.languageOutlet.text = self.language[indexPath.row]
-                }
+            }else{
+                cell.urlImage.kf_setImageWithURL(NSURL(string: "https://www.interntheory.com/uploads/company/companylogos/ed5d0b0e58c5d7b0c9f6dc48d26af7a354af4185/292491909de22d63689b48f7c6dd62b7e430c8c5com.png")!)
+            }
+            cell.movieName.text = deserializedMovie.title
+            cell.languageOutlet.text = deserializedMovie.languages
+            cell.certificateLabel.text = deserializedMovie.certificate
+            cell.dimensionOutlet.text = deserializedMovie.dimensions
         }
+        
         return cell
     }
+    // Function to get URL
 
-    }
+}
 

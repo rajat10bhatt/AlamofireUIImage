@@ -35,19 +35,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="560" height="255"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D38-O7-A2b">
-                                                    <rect key="frame" x="8" y="8" width="544" height="181"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="262" id="0jH-Q9-6k1"/>
-                                                        <constraint firstAttribute="height" constant="181" id="A20-Jd-NcH"/>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="544" id="UwV-Sq-mPC"/>
-                                                    </constraints>
-                                                    <variation key="default">
-                                                        <mask key="constraints">
-                                                            <exclude reference="0jH-Q9-6k1"/>
-                                                        </mask>
-                                                    </variation>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q8i-w9-01P">
                                                     <rect key="frame" x="8" y="197" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -71,22 +58,36 @@
                                                         <action selector="bookButton:" destination="bDg-kc-zg4" eventType="touchUpInside" id="8AP-Dg-Ohj"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r10-dS-2Zw">
-                                                    <rect key="frame" x="58" y="226" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPI-1R-wt0">
                                                     <rect key="frame" x="497" y="16" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r10-dS-2Zw" userLabel="Dimension Outlet">
+                                                    <rect key="frame" x="58" y="226" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D38-O7-A2b">
+                                                    <rect key="frame" x="8" y="8" width="544" height="181"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="262" id="0jH-Q9-6k1"/>
+                                                        <constraint firstAttribute="height" constant="181" id="A20-Jd-NcH"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="544" id="UwV-Sq-mPC"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="0jH-Q9-6k1"/>
+                                                        </mask>
+                                                    </variation>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Q8i-w9-01P" firstAttribute="top" secondItem="D38-O7-A2b" secondAttribute="bottom" constant="8" id="1XF-hn-iXV"/>
                                                 <constraint firstItem="D38-O7-A2b" firstAttribute="leading" secondItem="2a5-ti-SjN" secondAttribute="leadingMargin" id="3Ox-hz-NVk"/>
+                                                <constraint firstItem="r10-dS-2Zw" firstAttribute="top" secondItem="D38-O7-A2b" secondAttribute="bottom" constant="37" id="46W-RD-phT"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="aPI-1R-wt0" secondAttribute="trailing" constant="13" id="CPO-zT-RCj"/>
                                                 <constraint firstItem="XHi-Sw-W29" firstAttribute="trailing" secondItem="2a5-ti-SjN" secondAttribute="trailingMargin" id="HML-si-AaC"/>
                                                 <constraint firstItem="r10-dS-2Zw" firstAttribute="leading" secondItem="K3P-2G-PhG" secondAttribute="trailing" constant="8" id="NOF-xV-kbt"/>
@@ -103,6 +104,7 @@
                                         <connections>
                                             <outlet property="bookButton" destination="XHi-Sw-W29" id="bt3-CS-cNa"/>
                                             <outlet property="certificateLabel" destination="aPI-1R-wt0" id="zkD-8V-OMe"/>
+                                            <outlet property="dimensionOutlet" destination="r10-dS-2Zw" id="Yl7-A1-RuX"/>
                                             <outlet property="languageOutlet" destination="K3P-2G-PhG" id="4bv-ZS-70r"/>
                                             <outlet property="movieName" destination="Q8i-w9-01P" id="cmg-xJ-MMV"/>
                                             <outlet property="urlImage" destination="D38-O7-A2b" id="f2S-Vp-gwg"/>
